@@ -6,8 +6,8 @@ class EventsController < ApplicationController
   # GET /events or /events.json
   def index
     @eventsAll = Event.all 
-    #@events = Event._30_days_range
-    @events = Event._filter_by_concierto
+    @events = Event._30_days_range
+    #@events = Event._filter_by_concierto
     #events = controllerScope.showConcierto
     
 
