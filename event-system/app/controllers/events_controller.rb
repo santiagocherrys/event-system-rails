@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_action :authenticate_user_auth!
   before_action :set_event, only: %i[ show edit update destroy ]
 
     #controllerScope = helpScope.new
